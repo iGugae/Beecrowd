@@ -1,0 +1,16 @@
+num = int(input())
+
+caracter = str(input())
+soma = 0
+
+for linha in range(0,12):
+    for coluna in range(0,12):
+        n = float(input())
+        if (num == linha):
+            soma += n
+
+if (caracter == 'S'):
+    print(f'{soma:.1f}')
+
+elif (caracter == 'M'):
+    print(f'{soma/12:.1f}')
